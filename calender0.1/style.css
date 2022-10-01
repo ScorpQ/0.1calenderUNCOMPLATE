@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #292841;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 1rem;
+    text-align: center;
+
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.main-container header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1.5rem 1rem;
+}
+.main-container header p{
+    padding-top: 7px ;
+    font-weight: 600; 
+    font-size: 20px;
+}
+.main-container header i{
+    font-weight: bold; 
+    font-size: 30px; 
+    color:#878787;
+    width: 50px;
+    height: max-content;
+    cursor: pointer;
+}
+.main-container header i:hover{
+    background-color: #F2F2F2;
+    border-radius: 50%;
+}
+.main-container header .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+.main-container .weeks ul{
+    font-weight: 600;
+}
+.main-container ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 340px;
+
+    list-style-type: none;
+}
+.main-container .days li:hover{
+    background-color: #F2F2F2;
+    border-radius: 50%;
+}
+.main-container .days li.active:hover{
+    background-color: #292841;
+    border-radius: 50%;
+    color: #fff;
+}
+.main-container li{
+    padding: 8px 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.main-container li.inactive{
+    color: #BAC0C0;
+}
+.main-container li.active{
+    background-color: #292841;
+    border-radius: 50%;
+    color: #fff;
+}
+
